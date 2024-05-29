@@ -16,6 +16,6 @@ var loadInterval = setInterval(function () {
     const Game = unsafeWindow.Game;
     if (Game && Game.ready) {
         clearInterval(loadInterval);
-        Game.LoadMod("https://github.erbkaiser.com/FrozenCookies/frozen_cookies.js");
+        Game.LoadMod("https://raw.githubusercontent.com/arturino009/FrozenCookies/main/frozen_cookies.js");
     }
 }, 1000);
