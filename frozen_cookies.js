@@ -17,7 +17,10 @@ var scriptElement =
     document.getElementById("frozenCookieScript") !== null
         ? document.getElementById("frozenCookieScript")
         : document.getElementById("modscript_frozen_cookies");
-var baseUrl = "https://raw.githubusercontent.com/arturino009/FrozenCookies/main";
+var baseUrl =
+    scriptElement !== null
+        ? scriptElement.getAttribute("src").replace(/\/frozen_cookies\.js$/, "")
+        : "https://https://raw.githubusercontent.com/arturino009/FrozenCookies/main/";
 var FrozenCookies = {
     baseUrl: baseUrl,
     branch: "erb-",
